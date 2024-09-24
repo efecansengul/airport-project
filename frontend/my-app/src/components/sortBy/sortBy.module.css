@@ -1,0 +1,88 @@
+.content3 {
+  width: 100%;
+}
+
+.sortContainer {
+  display: flex;
+  flex-direction: column; /* Dikey olarak hizalamak için */
+  width: 100%; /* Sort container'ın genişliğini ayarla */
+}
+.sortPrice {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  width: 100%; /* Tüm genişliği kaplaması için */
+}
+.sortPrice div {
+  width: 100%; /* Her bir alt div'in genişliğini %100 yap */
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.sortPrice label {
+  width: 100%; /* Select elemanının genişliğini artır */
+  padding: 0.5rem; /* İç boşluk ekleyin */
+  box-sizing: border-box;
+  margin-bottom: 0.5rem; /* Label ile select arasında boşluk bırakın */
+  text-align: left;
+  font-weight: bold;
+}
+.sortPrice select {
+  height: 1.6rem;
+  box-sizing: border-box;
+  text-align: start;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin: 0.2rem;
+  outline: none;
+}
+.timeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 0.5rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.timeContainer p {
+  padding-left: 0.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.checkboxContainer {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  width: 100%;
+}
+.stopContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  align-items: start;
+  gap: 0.5rem;
+}
+.stopContainer p {
+  padding: 0.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+.labelContainer {
+  display: flex;
+  justify-content: space-between; /* Elemanlar arasında boşluk bırak */
+  width: 100%; /* Genişliğin tamamını kaplasın */
+  padding-right: 1rem;
+}
+.airlineFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 0.5rem;
+  gap: 0.5rem;
+}
+.airlineFilter p {
+  padding-left: 0.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+}

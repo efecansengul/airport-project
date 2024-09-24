@@ -1,0 +1,147 @@
+.content2 {
+  width: 100%; /* Tam genişlik */
+  max-width: 100%; /* Kapsayıcı genişliği kadar */
+  box-sizing: border-box; /* İç boşlukların genişliği etkilememesi için */
+}
+.content2 ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Elemanlar arasında boşluk */
+}
+.content2 li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriği dikeyde yayar */
+  width: 100%;
+  height: 300px; /* Sabit bir yükseklik ayarlıyoruz */
+  box-sizing: border-box; /* İç boşlukların genişliği etkilememesi için */
+  border-radius: 10px; /* Köşeleri yuvarlama */
+  overflow: hidden; /* Taşan içerikleri gizlemek için */
+}
+.content2 main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  height: 100%; /* Sabit yükseklikle tam dolacak */
+  background-color: white;
+
+  border-radius: 5px 5px 5px 0;
+}
+.main .country {
+  display: flex;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 20px;
+}
+.bookHero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.bookPriceContanier {
+  display: flex;
+  justify-content: space-between; /* Elemanlar arasında boşluk */
+  align-items: center; /* Dikeyde ortala */
+  margin-left: 20px;
+  position: relative;
+}
+.bookPriceContainer .price {
+  display: flex;
+  flex-direction: column; /* Price ve Round Trip'i alt alta diz */
+  justify-content: center;
+}
+.bookFlightButton {
+  padding: 25px 50px; /* İsteğe bağlı buton boyutu */
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 5px 0 5px 0; /* Köşeleri yuvarlar */
+  font-weight: 600px;
+  cursor: pointer;
+  position: absolute; /* Butonun kapsayıcıya göre pozisyonlanması */
+  right: 0px; /* Sağdan 10px boşluk */
+  bottom: 0px; /* Alttan 10px boşluk */
+}
+.checkDetails {
+  width: 20%;
+  height: 15%;
+  margin-top: -16px;
+  margin-left: 16px;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: underline;
+  color: #7a1e95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 5px 5px;
+  background-color: gainsboro;
+  cursor: pointer;
+  min-width: 100px;
+}
+.line {
+  width: 70px;
+  height: 1.5px;
+  background-color: black;
+}
+.formattedTime {
+  font-weight: 600;
+}
+.rightTimeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.leftTimeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.boldPrice {
+  font-weight: 700;
+  color: #4b0082;
+}
+.roundTrip {
+  margin-top: -10px;
+}
+.planeAnime {
+  width: 20px;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fly 6s ease-in-out infinite; /* Animasyonun adı ve süresi */
+  position: relative;
+}
+
+@keyframes fly {
+  0% {
+    left: -50px; /* Uçak ekranın dışından (en soldan) başlar */
+  }
+  100% {
+    left: 50%; /* Uçak ortada olur (başlangıç ve bitiş arasında) */
+  }
+}
+img {
+  width: 20px;
+  height: auto;
+}
+.imageDeparture {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageArrival {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}

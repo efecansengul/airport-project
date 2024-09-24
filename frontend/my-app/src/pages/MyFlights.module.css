@@ -1,0 +1,94 @@
+.myflightsHeader {
+  width: 100%;
+  min-width: 800px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  height: 78px;
+}
+.clickAndSearch {
+  display: flex;
+  width: 50%;
+
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding-left: 20px;
+}
+.clickAndSearch p {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.searchOption {
+  border: none;
+  outline: none;
+  color: #1e90ff;
+}
+.starsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  gap: 2px;
+  margin-left: 5rem;
+}
+.column {
+  display: flex;
+  flex-wrap: wrap; /* Yıldızları iki satırda göstermek için */
+  justify-content: start; /* Yıldızları ortala */
+  width: 50px; /* Her bir sütun genişliği */
+  gap: 2px;
+  margin: 0 auto;
+}
+.star {
+  width: 15px; /* Yıldızın genişliği */
+  height: 15px; /* Yıldızın yüksekliği */
+}
+.separator {
+  border-left: 2px solid #ccc; /* Dikey çizgi */
+  height: 40px; /* Çizginin yüksekliği */
+}
+.recomemdedContainer {
+  display: flex;
+  height: 100px;
+  padding-left: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.searchContainer select {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  outline: none;
+  border: none;
+  background-color: #eae4ed;
+  cursor: pointer;
+}
+.recomemdedContainer .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.flightsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Genişliği tam alana yayar */
+  justify-content: flex-end; /* Listeyi sayfanın altına yerleştirir */
+  width: 100%; /* Tüm sayfa genişliğini kapla */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

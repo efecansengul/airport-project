@@ -1,0 +1,210 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px 30px;
+}
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.booking h1 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.buttonContainer {
+  display: flex;
+}
+.buttonContainer .button {
+  border: none;
+  color: #4b0082;
+  background-color: gainsboro;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.leftButton:active {
+  background-color: #4b0082;
+  color: gainsboro;
+}
+.rightButton:active {
+  background-color: #4b0082;
+  color: gainsboro;
+}
+
+.leftButton {
+  border-radius: 15px 0 0 15px; /* Sol kenarları yuvarlatılmış buton */
+}
+.rightButton {
+  border-radius: 0 15px 15px 0;
+}
+.button.active {
+  background-color: #4b0082;
+  color: white;
+}
+.nav img {
+  height: 20px;
+}
+
+.formContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 10px;
+}
+.flyInput,
+.dateInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px; /* İçerideki elemanlar arası boşluk */
+}
+.departureSelectContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 2px;
+}
+.destinationSelectContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  position: relative;
+}
+.departureSelectContainer .logo {
+  position: absolute; /* Logoyu input'un içine yerleştirmek için absolute kullanıyoruz */
+  top: 50%; /* Input'un ortasına hizala */
+  left: 10px; /* Input'un solundan biraz boşluk bırak */
+  transform: translateY(-50%); /* Logoyu dikey olarak ortalamak için */
+  width: 25px; /* Logonun boyutunu ayarlıyoruz */
+  height: auto;
+}
+.destinationSelectContainer .logo {
+  position: absolute; /* Logo'yu input'un içine yerleştirmek için absolute kullanıyoruz */
+  top: 50%; /* Input'un ortasına hizala */
+  left: 10px; /* Input'un solundan biraz boşluk bırak */
+  transform: translateY(-50%); /* Logoyu dikey olarak ortalamak için */
+  width: 25px; /* Logonun boyutunu ayarlıyoruz */
+  height: auto;
+}
+.inputWrapper {
+  position: relative; /* Dropdown'un pozisyonu için relative */
+  display: inline-block;
+  width: 100%; /* Input ve dropdown genişliği */
+  margin-left: 2px; /* Logoya biraz boşluk bırakıyoruz */
+}
+
+.inputDeparture {
+  width: 100%; /* varsayılan genişlik */
+  max-width: 400px; /* maksimum genişlik, büyük ekranlar için */
+  height: 35px; /* sabit yükseklik */
+  padding: 5px; /* iç boşluk */
+  font-size: 1rem; /* yazı boyutu */
+  border-radius: 20px 0 0 20px; /* köşe yuvarlama */
+  border: 1px solid #ccc; /* kenarlık */
+  box-sizing: border-box; /* padding ve border'ın genişliği etkilememesi için */
+  outline: 1px solid #ccc;
+  padding-left: 55px;
+}
+.dropdown {
+  position: absolute; /* Dropdown'u input'un hemen altına yerleştir */
+  top: 100%; /* Input'un hemen altına hizala */
+  left: 0;
+  width: 100%; /* Dropdown genişliğini input genişliği ile aynı yap */
+  max-height: 200px;
+  overflow-y: auto; /* Çok fazla sonuç varsa scroll ile göster */
+  background-color: white;
+
+  border: 1px solid #ccc;
+  z-index: 100; /* Önde olmasını sağla */
+}
+
+.dropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
+.inputDestination {
+  width: 100%; /* varsayılan genişlik */
+  max-width: 400px; /* maksimum genişlik, büyük ekranlar için */
+  height: 35px; /* sabit yükseklik */
+  padding: 5px; /* iç boşluk */
+  font-size: 1rem; /* yazı boyutu */
+  border-radius: 0 20px 20px 0; /* köşe yuvarlama */
+  border: 1px solid #ccc; /* kenarlık */
+  box-sizing: border-box; /* padding ve border'ın genişliği etkilememesi için */
+  outline: 1px solid #ccc;
+  padding-left: 55px;
+}
+
+.datePickerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: relative;
+}
+.datePickerContainer .icon {
+  position: absolute; /* Logoyu input'un içine yerleştirmek için absolute kullanıyoruz */
+  top: 50%; /* Input'un ortasına hizala */
+  left: 10px; /* Input'un solundan biraz boşluk bırak */
+  transform: translateY(-50%); /* Logoyu dikey olarak ortalamak için */
+  width: 25px; /* Logonun boyutunu ayarlıyoruz */
+  height: auto;
+  z-index: 1;
+}
+.customDateInput {
+  width: 100%; /* varsayılan genişlik */
+  max-width: 400px; /* maksimum genişlik, büyük ekranlar için */
+  height: 35px; /* sabit yükseklik */
+  padding: 5px; /* iç boşluk */
+  font-size: 1rem; /* yazı boyutu */
+  border: 1px solid #ccc; /* kenarlık */
+  box-sizing: border-box; /* padding ve border'ın genişliği etkilememesi için */
+  outline: 1px solid #ccc;
+  padding-left: 55px;
+}
+.roundedLeft {
+  border-radius: 20px 0 0 20px;
+}
+.roundedRight {
+  border-radius: 0 20px 20px 0;
+}
+.submitButton {
+  display: flex;
+
+  border: none;
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1 rem;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+.form {
+  margin-top: 10px;
+}
+@media (max-width: 1500px) {
+  .formContainer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

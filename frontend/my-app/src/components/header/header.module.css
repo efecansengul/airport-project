@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  min-width: 800px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logoContainer > h1 {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #393939;
+}
+.menuContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.menuContainer h4 {
+  letter-spacing: 0.1px;
+  font-weight: 100;
+}
+.navItems {
+  display: flex;
+  gap: 2rem;
+}
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: 0.5px;
+}
+.navButton {
+  background: none;
+
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+.navButton h4 {
+  margin: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #393939;
+}
+.logoContainer > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navItem img {
+  width: 1rem;
+  height: 1rem;
+}
+.navItem:nth-of-type(1),
+.navItem:nth-of-type(2),
+.navItem:nth-of-type(3) {
+  margin-right: 0.5rem; /* Birinci ve ikinci öğeler arasındaki boşluk */
+}
+/* Üçüncü öğeyi uzaklaştır */
+.navItem:nth-of-type(4) {
+  margin-left: 1rem; /* Üçüncü öğeyi diğerlerinden uzaklaştır */
+}
+.navItem:nth-of-type(4) img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.navButton:link,
+.navButton:visited {
+  text-decoration: none; /* Linkler için dekorasyonu kaldır */
+}
+
+.navButton:hover {
+  text-decoration: none; /* Hover durumunda dekorasyonu kaldır */
+}

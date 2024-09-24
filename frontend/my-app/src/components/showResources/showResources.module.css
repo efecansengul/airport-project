@@ -1,0 +1,45 @@
+.content4 {
+  display: flex;
+  flex-direction: column; /* Dikey hizalama */
+  gap: 20px; /* Elemanlar arası boşluk */
+}
+
+.resourceItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.resourceItem div {
+  width: 100%; /* Kapsayıcının genişliği kadar */
+  height: 300px; /* İstediğiniz yükseklik */
+  position: relative; /* İçerikleri konumlandırmak için */
+  overflow: hidden; /* Taşmaları önlemek için */
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.resourceItem img {
+  width: 100%; /* Resmin kapsayıcısının genişliğini kaplasın */
+  height: 100%; /* Kapsayıcının yüksekliğini kaplasın */
+  object-fit: cover; /* Resmi kapsayıcıya göre sığdırma */
+}
+
+.resourceItem h1 {
+  position: absolute; /* Üst üste bindirmek için */
+  bottom: 0; /* Aşağıdan uzaklık */
+  left: 20px; /* Soldan uzaklık */
+  color: white; /* Yazı rengi */
+  border-radius: 5px; /* Kenar yuvarlama */
+  font-size: 1.5rem;
+}
+.resourceItem .logo {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  bottom: 60px;
+  left: 20px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 2px;
+}

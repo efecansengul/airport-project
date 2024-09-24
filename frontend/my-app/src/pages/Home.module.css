@@ -1,0 +1,29 @@
+.layout {
+  display: grid;
+  grid-template-columns: 4fr 1.5fr 1.5fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin: 10px;
+  height: 100vh; /* Sayfanın tamamına yayılacak */
+  grid-template-areas:
+    "book book resources"
+    "main sort resources"
+    "main sort resources";
+}
+.item1 {
+  grid-area: book;
+  background-color: white;
+  border-radius: 15px;
+}
+.item2 {
+  grid-area: main;
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+}
+.item3 {
+  grid-area: sort;
+}
+.item4 {
+  grid-area: resources;
+}

@@ -1,0 +1,29 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #eae4ed;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Tüm ekran yüksekliği */
+}
+main {
+  flex: 1; /* Kalan alanı kaplar */
+  margin: 1rem;
+  text-align: center;
+  height: 100vh;
+}

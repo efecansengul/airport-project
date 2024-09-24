@@ -1,0 +1,99 @@
+.flightItemListContainer {
+  display: flex;
+  justify-content: space-between; /* İçerikleri geniş alana yay */
+  align-items: center; /* Dikeyde ortalar */
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%; /* Genişliği tam alana yay */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 60px;
+  height: auto;
+  border-radius: 10px;
+  position: relative;
+}
+.listWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flightHourandAirline {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding-right: 20px;
+  font-weight: 500;
+  padding: 40px;
+  height: 200px;
+}
+.flightHourandAirline > div {
+  margin-bottom: 10px;
+}
+.flighthours {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 50%;
+  max-width: 600px;
+  font-size: 1.3rem;
+}
+.flighthours div {
+  flex: 1;
+  text-align: center;
+}
+.flightAirlineInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+  padding-top: 20px;
+}
+.flightAirlineInfo div {
+  margin-bottom: 5px;
+}
+.rightInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.rightInfo > div {
+  display: flex;
+  flex-direction: column; /* İki iç divi alt alta yerleştir */
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto; /* Yükseklik otomatik */
+  background-color: white;
+  margin-bottom: 10px; /* Divler arası boşluk */
+  padding: 20px; /* İçeride boşluk */
+  border: 1px solid #ddd; /* Border ekliyoruz */
+  border-radius: 5px; /* Köşeleri yuvarlıyoruz */
+}
+
+.rightInfo > div > div {
+  margin-bottom: 10px; /* Alt alta divler arasında boşluk */
+  text-align: center; /* Metinleri ortala */
+}
+.horizontalline {
+  height: 1px; /* Çizginin kalınlığı */
+  background-color: #333; /* Çizginin rengi (daha koyu bir renk) */
+  width: 20px; /* Çizginin genişliği */
+  margin: 10px 10px; /* Çizginin üstünde ve altında boşluk */
+}
+.deleteButton {
+  background-color: #7a1e95; /* Kırmızı arka plan rengi */
+  color: white; /* Yazı rengi */
+  border: none; /* Kenar yok */
+  border-radius: 5px; /* Kenar yuvarlama */
+  cursor: pointer; /* İmleci el yapar */
+  position: absolute; /* Pozisyonlama */
+  bottom: 0px; /* Alt kenardan 20px yukarıda */
+  right: 0px; /* Sağ kenardan 20px içeride */
+  padding: 15px 30px;
+  font-size: 1rem;
+}
