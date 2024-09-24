@@ -1,3 +1,7 @@
+
+
+
+
 # Uçuş Takip Uygulaması
 
 Bu uygulama, uçuş bilgilerini görüntülemek ve yönetmek için geliştirilmiştir. Uygulama, bir frontend (React) ve bir backend (Express.js) bileşenine sahiptir.
@@ -36,4 +40,7 @@ Bu uygulama, uçuş bilgilerini görüntülemek ve yönetmek için geliştirilmi
 
 ### uygulama kullanımı
 Uygulama çalıştıktan sonra, tarayıcınızda http://localhost:5173 adresine giderek uygulamayı görüntüleyebilirsiniz.
-    
+
+![anasayfa](https://github.com/user-attachments/assets/a330ba0d-627b-45a6-98f0-5a7e7d5f4975)
+![ususlarımsayfası](https://github.com/user-attachments/assets/81d22eaa-0540-4eee-8d60-eb383afb2c04)
+
